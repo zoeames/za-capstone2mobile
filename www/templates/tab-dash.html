@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ion-view title="Dashboard">
+      <ion-content class="padding">
+        <h5 ng-show="!rootuser.firstname">Login to see your dashboard</h5>
+        <div ng-show="rootuser.firstname" class="list"><a href="#" class="item item-thumbnail-left"><img ng-src="{{rootuser.avatar}}">
+            <h3>{{rootuser.firstname}}</h3>
+            <h3>{{rootuser.institutionid}}}</h3></a>
+          <button ng-click="logout(user)" class="button button-assertive loginButton">Logout</button>
+        </div>
+      </ion-content>
+    </ion-view>
+  </body>
+</html>

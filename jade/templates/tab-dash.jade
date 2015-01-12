@@ -1,0 +1,12 @@
+html
+  body
+    ion-view(title='Dashboard')
+      ion-content.padding
+        h5(ng-show='!rootuser.firstname') Login to see your dashboard
+        .list(ng-show='rootuser.firstname')
+          a.item.item-thumbnail-left(href='#')
+            img(ng-src='{{rootuser.avatar}}')
+            h3 {{rootuser.firstname}}
+            h3 {{rootuser.institutionid}}}
+          button.button.button-assertive.loginButton(ng-click='logout(user)') Logout
+              
