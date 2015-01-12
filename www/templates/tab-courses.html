@@ -5,6 +5,7 @@
       <ion-content>
         <ion-list>
           <h5 ng-show="!rootuser.institutionid">Login to see your courses</h5>
+          <ion-item ng-show="rootuser.institutionid" ng-repeat="course in courses" type="item-text-wrap" href="#/tab/course/{{course.courseId}}">{{course.courseTitle}}</ion-item>
         </ion-list>
       </ion-content>
     </ion-view>
