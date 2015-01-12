@@ -6,7 +6,10 @@ html
         .list(ng-show='rootuser.firstname')
           a.item.item-thumbnail-left(href='#')
             img(ng-src='{{rootuser.avatar}}')
-            h3 {{rootuser.firstname}}
-            h3 {{rootuser.institutionid}}}
+            h3 Welcome {{rootuser.firstname}} {{rootuser.lastname}}
+          h4 Name: {{rootuser.firstname}} {{rootuser.lastname}}
+          h4 Email: {{rootuser.email}}
+          h4 Institution ID: {{rootuser.institutionid}}
+          h4 Status: {{institutionStatus}}
           button.button.button-assertive.loginButton(ng-click='logout(user)') Logout
               
