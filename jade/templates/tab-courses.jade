@@ -4,5 +4,5 @@ html
       ion-content
         ion-list
           h5(ng-show='!rootuser.institutionid') Login to see your courses
-          ion-item(ng-show='rootuser.institutionid', ng-repeat='course in courses', type='item-text-wrap', href='#/tab/course/{{course.courseId}}')
+          ion-item(ng-show='rootuser.institutionid', ng-repeat='course in courses', type='item-text-wrap', href='#/tab/courses/{{course.courseId}}')
             | {{course.courseTitle}}

@@ -9,7 +9,10 @@
       return $http.get(origin + '/findcourses');
     }
 
+    function show(courseId){
+      return $http.get(origin + '/courses/' + courseId);
+    }
 
-    return {query:query};
+    return {query:query, show:show};
   }]);
 })();

@@ -45,6 +45,16 @@ angular.module('starter', ['ionic', 'starter.services'])
       }
     })
 
+    .state('tab.course-detail', {
+      url: '/courses/:courseId',
+      views: {
+        'tab-courses': {
+          templateUrl: 'templates/course-detail.html',
+          controller: 'CourseDetailCtrl'
+        }
+      }
+    })
+
     .state('tab.account', {
       url: '/account',
       views: {

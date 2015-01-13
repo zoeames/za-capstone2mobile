@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ion-view title="{{course.courseTitle}}">
+      <ion-content has-header="true" padding="true">
+        <h3>Instructor: {{course.instructorFirstName}} {{course.instructorLastName}}</h3>
+        <h3>Semester: {{course.semester}}</h3>
+        <h3>Lessons:</h3>
+        <ion-item ng-show="rootuser.institutionid" ng-repeat="lesson in lessons" type="item-text-wrap" href="#/tab/course/lesson/{{lesson.lessonId}}">{{lesson.lessonTitle}}</ion-item>
+      </ion-content>
+    </ion-view>
+  </body>
+</html>
