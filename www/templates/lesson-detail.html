@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ion-view title="{{lesson.lessonTitle}}">
+      <ion-content has-header="true" padding="true">
+        <h3>Quizzes:</h3>
+        <ion-item ng-show="rootuser.institutionid" ng-repeat="quiz in quizzes" type="item-text-wrap" href="#/tab/courses/{{courseId}}/lessons/{{lesson.lessonId}}/quizzes/{{quiz.quizId}}">{{quiz.quizTitle}}</ion-item>
+      </ion-content>
+    </ion-view>
+  </body>
+</html>

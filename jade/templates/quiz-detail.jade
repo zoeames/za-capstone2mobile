@@ -1,0 +1,11 @@
+html
+  body
+    ion-view(title='{{quiz.quizTitle}}')
+      ion-content(has-header='true', padding='true')
+        h3 Question: {{quiz.quizQuestion}}
+        img.quizImg(ng-src='{{quiz.photoURL}}')
+        button.button.button-royal.button-full.loginButton(ng-click='vote("A")') Answer A: {{quiz.answerA}}
+        button.button.button-royal.button-full.loginButton(ng-click='vote("B")') Answer B: {{quiz.answerB}}
+        button.button.button-royal.button-full.loginButton(ng-click='vote("C")') Answer C: {{quiz.answerC}}
+        button.button.button-royal.button-full.loginButton(ng-click='vote("D")') Answer D: {{quiz.answerD}}
+        button.button.button-royal.button-full.loginButton(ng-click='vote("E")') Answer E: {{quiz.answerE}}

@@ -55,6 +55,25 @@ angular.module('starter', ['ionic', 'starter.services'])
       }
     })
 
+    .state('tab.lesson-detail', {
+      url: '/courses/:courseId/lessons/:lessonId',
+      views: {
+        'tab-courses': {
+          templateUrl: 'templates/lesson-detail.html',
+          controller: 'LessonDetailCtrl'
+        }
+      }
+    })
+    .state('tab.quiz-detail', {
+      url: '/courses/:courseId/lessons/:lessonId/quizzes/:quizId',
+      views: {
+        'tab-courses': {
+          templateUrl: 'templates/quiz-detail.html',
+          controller: 'QuizDetailCtrl'
+        }
+      }
+    })
+
     .state('tab.account', {
       url: '/account',
       views: {

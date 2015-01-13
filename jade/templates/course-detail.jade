@@ -6,5 +6,5 @@ html
         h3 Semester: {{course.semester}}
         
         h3 Lessons:
-        ion-item(ng-show='rootuser.institutionid', ng-repeat='lesson in lessons', type='item-text-wrap', href='#/tab/course/lesson/{{lesson.lessonId}}')
+        ion-item(ng-show='rootuser.institutionid', ng-repeat='lesson in lessons', type='item-text-wrap', href='#/tab/courses/{{course.courseId}}/lessons/{{lesson.lessonId}}')
           | {{lesson.lessonTitle}}

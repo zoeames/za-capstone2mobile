@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <ion-view title="{{quiz.quizTitle}}">
+      <ion-content has-header="true" padding="true">
+        <h3>Question: {{quiz.quizQuestion}}</h3><img ng-src="{{quiz.photoURL}}" class="quizImg">
+        <button ng-click="vote(&quot;A&quot;)" class="button button-royal button-full loginButton">Answer A: {{quiz.answerA}}</button>
+        <button ng-click="vote(&quot;B&quot;)" class="button button-royal button-full loginButton">Answer B: {{quiz.answerB}}</button>
+        <button ng-click="vote(&quot;C&quot;)" class="button button-royal button-full loginButton">Answer C: {{quiz.answerC}}</button>
+        <button ng-click="vote(&quot;D&quot;)" class="button button-royal button-full loginButton">Answer D: {{quiz.answerD}}</button>
+        <button ng-click="vote(&quot;E&quot;)" class="button button-royal button-full loginButton">Answer E: {{quiz.answerE}}</button>
+      </ion-content>
+    </ion-view>
+  </body>
+</html>
