@@ -3,7 +3,7 @@
   <body>
     <ion-view title="{{quiz.quizTitle}}">
       <ion-content has-header="true" padding="true">
-        <h3>Question: {{quiz.quizQuestion}}</h3><img ng-src="{{quiz.photoURL}}" class="quizImg">
+        <h3>Question: {{quiz.quizQuestion}}</h3><img ng-src="{{quiz.photoURL}}" class="full-image">
         <button ng-click="vote(&quot;A&quot;)" class="button button-royal button-full loginButton">Answer A: {{quiz.answerA}}</button>
         <button ng-click="vote(&quot;B&quot;)" class="button button-royal button-full loginButton">Answer B: {{quiz.answerB}}</button>
         <button ng-click="vote(&quot;C&quot;)" class="button button-royal button-full loginButton">Answer C: {{quiz.answerC}}</button>
